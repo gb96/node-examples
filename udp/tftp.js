@@ -4,11 +4,11 @@
  */
 
 var dgram = require('dgram');
-var slog = require('sys').log;
+var slog = require('util').log;
 var fs = require('fs');
 
-var SERVER_HOST='127.0.0.1';
-var SERVER_PORT=1069;
+var SERVER_HOST='0.0.0.0';
+var SERVER_PORT=69;
 
 
 var opcodes = {OPCODE_RRQ: 1,
